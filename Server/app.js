@@ -3,15 +3,16 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 
-//var animals = require('./routes/animals');
+//var animals = require('./routes/animals'); //Server runs with these three lines commented out.
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-//app.use('/animals', animal);
+//app.use('/animals', animals);
+//app.use('/random', random);
 
 app.get('/*', function (req, res){
 	var file = req.params[0] || '/views/index.html';
-	res.sendFile(path.join(__dirname, '.public', file));
+	res.sendFile(path.join(__dirname, './public', file));
 });
 
 app.set('port', process.env.PORT || 5000);
