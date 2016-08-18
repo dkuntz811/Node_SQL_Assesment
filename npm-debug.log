@@ -1,0 +1,27 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.3.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'init' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.1
+4 verbose config Skipping project config: /Users/Kuntz/.npmrc. (matches userconfig)
+5 silly package data undefined
+6 info init written successfully
+7 verbose stack Error: Unsupported URL Type: Node:SQL Assessment
+7 verbose stack     at parseUrl (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:186:13)
+7 verbose stack     at npa (/usr/local/lib/node_modules/npm/node_modules/npm-package-arg/npa.js:79:12)
+7 verbose stack     at Object.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/init-package-json/default-input.js:49:12)
+7 verbose stack     at PromZard.loaded (/usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/promzard/promzard.js:90:22)
+7 verbose stack     at PromZard.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/init-package-json/node_modules/promzard/promzard.js:67:10)
+7 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
+7 verbose stack     at tryToString (fs.js:455:3)
+7 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)
+8 verbose cwd /Users/Kuntz/Desktop/Boot/Week4/Node:SQL Assessment
+9 error Darwin 13.4.0
+10 error argv "/usr/local/Cellar/node/6.3.1/bin/node" "/usr/local/bin/npm" "init"
+11 error node v6.3.1
+12 error npm  v3.10.3
+13 error Unsupported URL Type: Node:SQL Assessment
+14 error If you need help, you may report this error at:
+14 error     <https://github.com/npm/npm/issues>
+15 verbose exit [ 1, true ]
