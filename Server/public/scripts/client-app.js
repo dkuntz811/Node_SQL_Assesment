@@ -1,4 +1,5 @@
 $(document).ready(function (){
+	console.log("This is working");
   getAnimals();
 	randomAnimal();
 $('#animal-submit').on('click', postAnimal);
@@ -26,7 +27,7 @@ function getAnimals(){
 }
 
 function randomAnimal() {
-	event.preventDefault();
+
 
 	var animal = {};
 
