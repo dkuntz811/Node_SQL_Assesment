@@ -1,14 +1,16 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var pg = require('pg');
 var bodyParser = require('body-parser');
 
-//var animals = require('./routes/animals'); //Server runs with these three lines commented out.
+var animals = require('./routes/animals'); //Server runs with these three lines commented out.
+var random = require('./routes/random');
 
 app.use(bodyParser.urlencoded({extended: true}));
 
-//app.use('/animals', animals);
-//app.use('/random', random);
+app.use('/animals', animals);
+app.use('/random', random);
 
 app.get('/*', function (req, res){
 	var file = req.params[0] || '/views/index.html';
